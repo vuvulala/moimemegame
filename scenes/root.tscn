@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxems0q0dsn25"]
+
+[ext_resource type="PackedScene" uid="uid://die0bb3q7vpbr" path="res://scenes/testlevel.tscn" id="1_y5qxk"]
+[ext_resource type="PackedScene" uid="uid://dl6je7sxo18ui" path="res://objects/player/player.tscn" id="2_q4mcc"]
+[ext_resource type="SpriteFrames" uid="uid://vi6lg5cex65s" path="res://resources/players/frog.tres" id="3_b2a54"]
+[ext_resource type="SpriteFrames" uid="uid://bwq4u2wy0wjur" path="res://resources/players/vrdude.tres" id="3_vh8g7"]
+[ext_resource type="PackedScene" uid="uid://baglkiqpvljy7" path="res://objects/weapons/sword.tscn" id="4_gm23u"]
+[ext_resource type="SpriteFrames" uid="uid://qt0ssl1on3cb" path="res://resources/weapon_textures/sword.tres" id="5_mfj3a"]
+
+[node name="Root" type="Node2D"]
+
+[node name="Testlevel" parent="." instance=ExtResource("1_y5qxk")]
+
+[node name="Player1" parent="." instance=ExtResource("2_q4mcc")]
+position = Vector2(318, 239)
+player_spritesheet = ExtResource("3_b2a54")
+
+[node name="Sword" parent="Player1" instance=ExtResource("4_gm23u")]
+sprite_frames = ExtResource("5_mfj3a")
+
+[node name="Player2" parent="." instance=ExtResource("2_q4mcc")]
+position = Vector2(639, 249)
+player_spritesheet = ExtResource("3_vh8g7")
+
+[node name="Sword" parent="Player2" instance=ExtResource("4_gm23u")]
+sprite_frames = ExtResource("5_mfj3a")

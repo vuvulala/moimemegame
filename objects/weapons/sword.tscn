@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://baglkiqpvljy7"]
+
+[ext_resource type="Script" path="res://objects/weapons/sword.gd" id="2_gqlj3"]
+
+[node name="Sword" type="Node2D"]
+script = ExtResource("2_gqlj3")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
